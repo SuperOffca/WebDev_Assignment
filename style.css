@@ -33,7 +33,7 @@ ul li {
 @media screen and (max-width: 400px) {
 
     /* Nav bar */
-    ul {
+    ul li {
         display: flex;
         justify-content: center;
         align-items: center;
