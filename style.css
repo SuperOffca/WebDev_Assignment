@@ -21,7 +21,7 @@ ul li {
 /* RESPONSIVE - MEDIUM SIZE STYLE */
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
 
 
 
@@ -30,7 +30,7 @@ ul li {
 
 /* RESPONSIVE - SMALL SIZE STYLE  */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479px) {
 
     /* Nav bar */
     ul li {
