@@ -1,28 +1,87 @@
-body{
-    background-color: grey;
+body {
+    
+    font-family: 'Amaranth', sans-serif;
+}
+/* General Classes */
+
+.align_both_content {
+    margin: auto;
+    text-align: center;
 }
 
-/* Navigation bar styling */
-nav {
+.align_container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+.full_width {
     width: 100%;
     max-width: 100%;
-    background-color: black;
 }
 
-ul li { 
+#main_page_container {
+    position: relative;
+    height: 100vh;
+    background-image: url("header_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation bar */
+nav {
+    width: 100vw;
+    position: fixed;
+    margin-top: 20px;
+}
+
+li { 
     display: inline-block;
-    border: blue;
-    padding: 5px;
-    margin: 10px auto;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 20px;
+   
+  }
+
+  a:visited {
+    color: #ff0099;
+    
+  }
+
+/* Header */
+header {
+    width: 70%;
+    max-width: 70%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
+h1 {
+    color: #cc00ff;
+    font: 10vw bolder;
+    margin: 0 0 2% 0;
+    }
 
+.subtitle {
+    position: relative;
+    left: 50%;
+    width: 50%;
+    max-width: 50%;
+    font-size: 4vw;
+    text-align: right;
+}
 
+.arrow_down {
+    position: relative;
+    z-index: 2;
+
+}
 /* RESPONSIVE - MEDIUM SIZE STYLE */
 
 
 @media screen and (max-width: 991px) {
-
 
 
 }
@@ -30,15 +89,28 @@ ul li {
 
 /* RESPONSIVE - SMALL SIZE STYLE  */
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 691px) {
 
-    /* Nav bar */
-    ul li {
+    nav {
+        margin-top: 0;
+
+    }   
+  /* Align buttons evenly */
+    ul {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-items: stretch;
+        justify-content: space-between;
+        height: 10vh;
+            }
+
+    li {
+        width: 33.3%;
+        margin: auto;
+        padding: 0 auto;
+        font-size: 14px;
+        border-right: 2px groove #d08eff70;
+        border-bottom: 2px groove #d08eff;
     }
-      
 
 
   }
