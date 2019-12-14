@@ -1,6 +1,16 @@
+/* 
+colors:
+background color: #58d3fd;
+nav-bar color: #ff0099;
+alternative background color: #3e408f;
+
+*/
+
+
 body {
     
     font-family: 'Amaranth', sans-serif;
+    background-color: #58d3fd;
 }
 /* General Classes */
 
@@ -29,11 +39,30 @@ body {
     background-size: cover;
 }
 
+/* Sections */
+.section_title{
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.section_subtitle {
+    color: #ff0099;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-left: 5%;
+    padding: 20px;
+
+}
+
 /* Navigation bar */
 nav {
     width: 100vw;
     position: fixed;
     margin-top: 20px;
+    z-index: 3;
 }
 
 li { 
@@ -50,7 +79,7 @@ li {
   }
 
 /* Header */
-header {
+#main_page_header {
     width: 70%;
     max-width: 70%;
     height: 100vh;
@@ -59,7 +88,7 @@ header {
 }
 
 h1 {
-    color: #cc00ff;
+    color: white;
     font: 10vw bolder;
     margin: 0 0 2% 0;
     }
@@ -71,6 +100,7 @@ h1 {
     max-width: 50%;
     font-size: 4vw;
     text-align: right;
+    color: #ff0099;
 }
 
 .arrow_down {
@@ -78,6 +108,14 @@ h1 {
     z-index: 2;
 
 }
+
+/* Footer */
+footer {
+    background-color: #3e408f;
+    color: white;
+}
+
+
 /* RESPONSIVE - MEDIUM SIZE STYLE */
 
 
