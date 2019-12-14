@@ -24,7 +24,7 @@ body {
 #main_page_container {
     position: relative;
     height: 100vh;
-    background-image: url("header_image.png");
+    background-image: url("header_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
