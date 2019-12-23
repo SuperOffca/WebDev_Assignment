@@ -42,7 +42,7 @@ body {
 
 #main_page_container {
     height: 100vh;
-    background-image: url("upper_image.png"), url("background_1a.png");
+    background-image: url("Upper_image.png"), url("background_1a.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 60%, contain;
     background-position: left top, right bottom;
