@@ -1,7 +1,8 @@
 /* 
 colors:
 background color: #00203f;
-subtitle color: #ffe300;
+nav-bar color: #ff0099;
+alternative background color: #3e408f;
 
 fonts:
 font-family: 'Aclonica', sans-serif;
@@ -39,25 +40,26 @@ body {
     overflow: hidden;
 }
 
-
 #main_page_container {
+    position: relative;
     height: 100vh;
-    background-image: url("Upper_image.png"), url("background_1a.png");
+    max-height: 100%vh;
+    background-image: url("upper_image.png"), url("layer_4.png");
     background-repeat: no-repeat, no-repeat;
-    background-size: 60%, contain;
+    background-size: initial, initial;
     background-position: left top, right bottom;
 }
 
 .info_content {
-    height: 100vh;
-    background-image: url("background_1b.png");
+    height: 200rem;
+    position: relative;
+    background-image: url("layer_3.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 /* Sections */
-
-
+ 
 
 
 /* Navigation bar */
@@ -65,7 +67,7 @@ nav {
     width: 100vw;
     position: fixed;
     z-index: 3;
-    background-color: transparent;
+    background-color: #fbd055;
 }
 
 li { 
@@ -83,8 +85,8 @@ a:visited {
 
 /* Header */
 #main_page_header {
-    width: 80%;
-    max-width: 80%;
+    width: 70%;
+    max-width: 70%;
     height: 100vh;
     position: relative;
     z-index: 1;
@@ -93,7 +95,7 @@ a:visited {
 h1 {
     color: white;
     font-family: 'Aclonica', sans-serif;
-    font-size: 8vw;
+    font-size: 6vw;
     margin: 0 0 2% 0;
 }
 
@@ -101,7 +103,8 @@ h1 {
     position: relative;
     left: 50%;
     width: 50%;
-    font-size: 3vw;
+    max-width: 50%;
+    font-size: 2vw;
     text-align: right;
     color: #ffe300;
 }
@@ -133,6 +136,12 @@ address {
 @media screen and (max-width: 1100px) {
 
 
+    .topic_banner {
+        box-sizing: border-box;
+        width: 50%;
+        max-width: 50%;
+    }
+
 }
 
 
@@ -140,28 +149,15 @@ address {
 
 @media screen and (max-width: 691px) {
 
-    nav {
-        margin-top: 0;
-    }   
-
-
-    h1 {
-        color: white;
-        font-size: 4rem;
-    }
-    
-    .subtitle {
-        font-size: 1.5rem;
-        left: 25%;
-        width: 60%;
+    #main_page_container {
+        background-size: contain;
     }
 
-  /* Align buttons evenly */
+/* Navigation bar */
     ul {
         display: flex;
         justify-items: stretch;
         justify-content: space-between;
-
     }
 
     li {
@@ -173,9 +169,23 @@ address {
         border-bottom: 2px groove #d08eff;
     }
 
+    #main_page_header {
+        width: 75%;
+        max-width: 75%;
+    }
 
+    h1 {
+        font-size: 8vw;
+    }
+
+/* Footer */
+
+  footer {
+    height: 20vh;
+    background-size: 100% 100%;
+  }
     details {
-        font-size: 3vh;
+        font-size: 0.8rem;
         margin: 0;
     }
     
@@ -184,14 +194,4 @@ address {
         margin: 0;
     }
 
-    .topic_banner {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 100%;
-    }
-
-  footer {
-    height: 20vh;
-    background-size: 100% 100%;
-}
 }
