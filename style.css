@@ -4,7 +4,9 @@ background color: #00203f;
 subtitle color: #ffe300;
 
 fonts:
+heading
 font-family: 'Aclonica', sans-serif;
+standard
 font-family: 'Mukta Malar', sans-serif;
 */
 
@@ -63,7 +65,6 @@ nav {
     width: 100vw;
     position: fixed;
     z-index: 3;
-    background-color: transparent;
 }
 
 li { 
@@ -106,14 +107,27 @@ h1 {
 
 .teaser_section {
     width: 60%;
-    padding-top: 15%;
     position: relative;
     z-index: 2;
     left: 20%;
 }
 
+.teaser_section_1_style {
+    padding-top: 20%;
+}
+
+.teaser_section_2_style{
+    padding-top: 10%;
+  
+}
+
+.teaser_section_3_style {
+    padding: 10% 0;
+  
+}
+
 .box {
-    width: 10vh;
+    width: 10vw;
     height: 10vh;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     float: left;
@@ -121,7 +135,7 @@ h1 {
 }
 
 .box2 {
-    width: 10vh;
+    width: 10vw;
     height: 10vh;
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
     float: right;
@@ -129,25 +143,43 @@ h1 {
 }
 
 .box3 {
-    width: 10vh;
+    width: 10vw;
     height: 10vh;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     float: left;
     background-image: linear-gradient(to right, #5EB5EB, rgba(0, 112, 182, 0.37));
 }
 
-
-/*---------------------- text */
-h2{
-    font-size: 3vw;
+header {
+    padding: 0 2%;
 }
+/*---------------------- text */
+    h2{
+        font-size: 3vw;
+     }
 
+    p{
+        font-size: 1.5vw;
+        letter-spacing: .3rem;
+        line-height: 1.2em;
+        padding: 1rem 3rem;
+    }
 
+    span {
+        font-family: 'Aclonica', sans-serif;
+        font-size: 3.4vw;
+   }
+   .heading_1{
+    color: #AEC534;
+   }
 
-/* .info_content section:nth-child(2){
-    right: 20%;
-} */
+   .heading_2{
+    color: #B3007B;
+   }
 
+   .heading_3{
+    color: #5EB5EB;
+   }
 /* Footer */
 .footer_container {
     height: 35vh;
@@ -158,14 +190,17 @@ h2{
 }
 
 details {
+    padding-top: 1%;
     font-size: 0.9rem;
     position: relative;
-    float: right;
+    left: 35%;
 }
 
 address {
-    padding-top: 10%;
+    padding-top: 5%;
     font-size: 1.5rem;
+    position: relative;
+    left: 35%;
 }
 
 
