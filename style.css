@@ -1,8 +1,7 @@
 /* 
 colors:
 background color: #00203f;
-nav-bar color: #ff0099;
-alternative background color: #3e408f;
+subtitle color: #ffe300;
 
 fonts:
 font-family: 'Aclonica', sans-serif;
@@ -14,6 +13,7 @@ body {
     
     font-family: 'Mukta Malar', sans-serif;
     background-color: #00203f;
+    color: whitesmoke;
 }
 
 
@@ -40,26 +40,22 @@ body {
     overflow: hidden;
 }
 
+
 #main_page_container {
-    position: relative;
     height: 100vh;
-    max-height: 100%vh;
-    background-image: url("upper_image.png"), url("layer_4.png");
+    background-image: url("upper_image.png"), url("background_1a.png");
     background-repeat: no-repeat, no-repeat;
-    background-size: initial, initial;
+    background-size: 60%, contain;
     background-position: left top, right bottom;
 }
 
 .info_content {
-    height: 200rem;
-    position: relative;
-    background-image: url("layer_3.png");
+    background-image: url("background_1b.png");
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+    z-index: 1;
 }
-
-/* Sections */
- 
 
 
 /* Navigation bar */
@@ -67,7 +63,7 @@ nav {
     width: 100vw;
     position: fixed;
     z-index: 3;
-    background-color: #fbd055;
+    background-color: transparent;
 }
 
 li { 
@@ -85,17 +81,15 @@ a:visited {
 
 /* Header */
 #main_page_header {
-    width: 70%;
-    max-width: 70%;
+    width: 80%;
+    max-width: 80%;
     height: 100vh;
-    position: relative;
-    z-index: 1;
 }
 
 h1 {
     color: white;
     font-family: 'Aclonica', sans-serif;
-    font-size: 6vw;
+    font-size: 8vw;
     margin: 0 0 2% 0;
 }
 
@@ -103,15 +97,59 @@ h1 {
     position: relative;
     left: 50%;
     width: 50%;
-    max-width: 50%;
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: right;
     color: #ffe300;
 }
 
+/* Sections */
+
+.teaser_section {
+    width: 60%;
+    padding-top: 15%;
+    position: relative;
+    z-index: 2;
+    left: 20%;
+}
+
+.box {
+    width: 10vh;
+    height: 10vh;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    float: left;
+    background-image: linear-gradient(to right, #AEC534, rgba(91, 179, 234, 0.363));
+}
+
+.box2 {
+    width: 10vh;
+    height: 10vh;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    float: right;
+    background-image: linear-gradient(to right, rgba(207, 97, 156, 0.37), #B3007B);
+}
+
+.box3 {
+    width: 10vh;
+    height: 10vh;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    float: left;
+    background-image: linear-gradient(to right, #5EB5EB, rgba(0, 112, 182, 0.37));
+}
+
+
+/*---------------------- text */
+h2{
+    font-size: 3vw;
+}
+
+
+
+/* .info_content section:nth-child(2){
+    right: 20%;
+} */
 
 /* Footer */
-footer {
+.footer_container {
     height: 35vh;
     background-image: url("footer_background.png");
     background-repeat: no-repeat;
@@ -121,12 +159,13 @@ footer {
 
 details {
     font-size: 0.9rem;
-    margin: 0;
+    position: relative;
+    float: right;
 }
 
 address {
+    padding-top: 10%;
     font-size: 1.5rem;
-    margin: 0;
 }
 
 
@@ -136,12 +175,6 @@ address {
 @media screen and (max-width: 1100px) {
 
 
-    .topic_banner {
-        box-sizing: border-box;
-        width: 50%;
-        max-width: 50%;
-    }
-
 }
 
 
@@ -149,15 +182,28 @@ address {
 
 @media screen and (max-width: 691px) {
 
-    #main_page_container {
-        background-size: contain;
+    nav {
+        margin-top: 0;
+    }   
+
+
+    h1 {
+        color: white;
+        font-size: 4rem;
+    }
+    
+    .subtitle {
+        font-size: 1.5rem;
+        left: 25%;
+        width: 60%;
     }
 
-/* Navigation bar */
+  /* Align buttons evenly */
     ul {
         display: flex;
         justify-items: stretch;
         justify-content: space-between;
+
     }
 
     li {
@@ -169,23 +215,9 @@ address {
         border-bottom: 2px groove #d08eff;
     }
 
-    #main_page_header {
-        width: 75%;
-        max-width: 75%;
-    }
 
-    h1 {
-        font-size: 8vw;
-    }
-
-/* Footer */
-
-  footer {
-    height: 20vh;
-    background-size: 100% 100%;
-  }
     details {
-        font-size: 0.8rem;
+        font-size: 3vh;
         margin: 0;
     }
     
@@ -194,4 +226,14 @@ address {
         margin: 0;
     }
 
+    .topic_banner {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+    }
+
+  footer {
+    height: 20vh;
+    background-size: 100% 100%;
+}
 }
