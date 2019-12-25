@@ -35,6 +35,7 @@ body {
 .full_width {
     width: 100%;
     max-width: 100%;
+    overflow: hidden;
 }
 
 .float_clear {
@@ -61,12 +62,14 @@ body {
 
 
 /* Navigation bar */
-nav {
+.navbar_default {
     width: 100vw;
     position: fixed;
-    z-index: 3;
 }
 
+ul{
+    background-color: rgba(255, 255, 0, 0);
+}
 li { 
     display: inline-block;
     text-align: center;
@@ -187,6 +190,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: white;
+    /* max-width: 100vw; */
 }
 
 details {
@@ -239,6 +243,7 @@ address {
         justify-items: stretch;
         justify-content: space-between;
 
+
     }
 
     li {
@@ -253,22 +258,27 @@ address {
 
     details {
         font-size: 3vh;
-        margin: 0;
+
+
     }
     
     address {
         font-size: 1rem;
         margin: 0;
+
+
     }
 
     .topic_banner {
         box-sizing: border-box;
         width: 100%;
-        max-width: 100%;
+  
     }
 
   footer {
     height: 20vh;
     background-size: 100% 100%;
+
+
 }
 }
