@@ -1,0 +1,250 @@
+
+/* General Classes */
+
+html{
+    font-size: 100%;
+}
+body {
+    
+    font-family: 'Mukta Malar', sans-serif;
+    background-color: #00203f;
+    color: rgb(212, 210, 214);
+}
+
+.align_both_content {
+    margin: auto;
+    text-align: center;
+}
+
+.align_container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.full_width {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.float_clear {
+    clear: both;
+    overflow: hidden;
+}
+
+/* Navigation bar */
+.navbar_default {
+    width: 100vw;
+    position: fixed;
+}
+
+.navbar_list{
+    background-color: rgba(255, 255, 0, 0);
+}
+
+.navbar_list_item { 
+    display: inline-block;
+    text-align: center;
+    padding: 30px 40px;
+    font-size: 20px;
+}
+
+a:visited {
+    color: #00203f;
+    font-weight: 900;
+    
+}
+
+/* Document main section */
+
+.contact_us_container {
+    height: 100vh;
+    max-height: 100vh;
+    background-image: url("upper_image.png"), url("background_1a.png");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60%, contain;
+    background-position: left top, right bottom;
+    overflow: hidden;
+}
+
+.contact_main_section {
+    width: 74%;
+    max-width: 74%;
+    height: 70%;
+    max-height: 70%;
+    margin: 10% 13%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background-color: rgba(0, 31, 63, 0.459);
+     -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    }
+
+#contact_us_header {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 3rem;
+}
+
+.contact_options_container {
+    width: 35%;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 5%;
+}
+
+.form_container {
+    width: 65%;
+    box-sizing: border-box;
+    float: left;
+    padding-right: 5%;
+}
+
+h2, label {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 1.5rem;
+    }
+
+    p {
+        width: 75%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+.call_header, .form_header {
+    margin-top: 10%;
+}
+
+address, li {
+    font-size: 1.2rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.849);
+    margin-bottom: 25px;
+    margin-top: 10px;
+ }
+
+ ::placeholder {
+    font-family: 'Mukta Malar', sans-serif;
+    color: #00203f;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    padding-left: 1%;
+}
+option {
+    font-family: 'Mukta Malar', sans-serif;
+    color: #00203f;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+}
+
+button {
+    width: 50%;
+    padding: 1vh;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin-bottom: 8%;
+
+}
+
+
+@media screen and (max-width: 691px) {
+
+    nav {
+        margin-top: 0;
+        background-color: #adc534;
+     }   
+
+
+     #contact_us_header {
+        margin-top: 8%;
+        margin-bottom: 8%;
+        font-size: 1.6rem;
+    }
+
+  /* Align buttons evenly */
+    .navbar_list {
+        display: flex;
+        justify-items: stretch;
+        justify-content: space-between;
+    }
+
+    .navbar_list_item {
+        width: 33.3%;
+        margin: auto;
+        padding: 0 auto;
+        font-size: 1rem;
+        border-right: 2px groove rgba(91, 179, 234, 0.363);
+        border-bottom: 2px groove rgba(91, 179, 234, 0.363);
+    }
+
+    .contact_us_container {
+        height: 100vh;
+        max-height: auto;
+        background-size: 90%, contain;
+        overflow: auto;
+        }
+
+    .contact_main_section {
+        width: 74%;
+        max-width: 74%;
+        height: 100vh;
+        max-height: 130vh;
+        margin: 25% 13% 20% 13%;
+        overflow-y: hidden;
+
+}
+.contact_options_container {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 15%;
+
+}
+
+.form_container {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h2, label {
+    font-size: 1.2rem;
+    }
+
+    ::placeholder {
+       font-size: .7rem;
+    }
+
+ 
+    p {
+        width: 100%;
+        font-size: .8rem;
+    }
+
+    address, li {
+        font-size: 1rem;
+        padding-left: 10%;
+        margin-top: 5%;
+    }
+    
+
+    input[type=text], select, textarea {
+         margin-bottom: 18px;
+        margin-top: 5px;
+     }
+}
