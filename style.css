@@ -10,6 +10,9 @@ standard
 font-family: 'Mukta Malar', sans-serif;
 */
 
+html{
+    font-size: 100%;
+}
 
 body {
     
@@ -100,9 +103,6 @@ h1 {
     margin: 0 0 2% 0;
 }
 .subtitle {
-    position: relative; 
-    left: 50%;
-    width: 50%;
     font-size: 3vw;
     text-align: right;
     color: #ffe300;
@@ -163,7 +163,7 @@ header {
         font-size: 3vw;
      }
 
-    p{
+    .teaser_content {
         font-size: 1.5vw;
         letter-spacing: .3rem;
         line-height: 1.2em;
@@ -238,9 +238,8 @@ address {
     }
     
     .subtitle {
-        font-size: 1.5rem;
-        left: 25%;
-        width: 60%;
+        font-size: 1.2rem;
+        text-align: center;
     }
 
   /* Align buttons evenly */
