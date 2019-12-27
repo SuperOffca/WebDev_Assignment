@@ -39,7 +39,7 @@ body {
 }
 
 .float_clear {
-    clear: left;
+    clear: both;
     overflow: hidden;
 }
 
@@ -65,16 +65,19 @@ body {
 .navbar_default {
     width: 100vw;
     position: fixed;
+    z-index: 4;
 }
 
-ul{
-    background-color: rgba(255, 255, 0, 0);
-}
 li { 
     display: inline-block;
     text-align: center;
     padding: 30px 40px;
     font-size: 20px;
+}
+
+#home, #about, #contact {
+    font-size: 20px;
+    font-weight: 900;
 }
 
 a:visited {
@@ -96,15 +99,14 @@ h1 {
     font-size: 8vw;
     margin: 0 0 2% 0;
 }
-
 .subtitle {
-    position: relative;
+    position: relative; 
     left: 50%;
     width: 50%;
     font-size: 3vw;
     text-align: right;
     color: #ffe300;
-}
+} 
 
 /* Sections */
 
@@ -208,7 +210,7 @@ address {
 }
 
 
-/* RESPONSIVE - MEDIUM SIZE STYLE */
+/* ++++++ MEDIUM VIEWPORT SETUP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
 @media screen and (max-width: 1100px) {
@@ -217,14 +219,18 @@ address {
 }
 
 
-/* RESPONSIVE - SMALL SIZE STYLE  */
+/* ++++++ SMALL VIEWPORT SETUP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media screen and (max-width: 691px) {
 
-    nav {
-        margin-top: 0;
-    }   
+    #main_page_container {
+        background-size: 110%, contain;
+    }
 
+    nav{
+     margin-top: 0;
+    background-image: linear-gradient(to right, #adc534, #5EB5EB); 
+ }  
 
     h1 {
         color: white;
@@ -242,19 +248,22 @@ address {
         display: flex;
         justify-items: stretch;
         justify-content: space-between;
-
-
     }
 
     li {
         width: 33.3%;
         margin: auto;
         padding: 0 auto;
-        font-size: 10px;
-        border-right: 2px groove #d08eff70;
-        border-bottom: 2px groove #d08eff;
-    }
+   }
+   
+   #home, #about, #contact {
+    font-size: 20px;
+    font-weight: 900;
+}
 
+   .list_item_1, .list_item_2 {
+    border-right: 5px ridge #adc53423;
+}
 
     details {
         font-size: 3vh;

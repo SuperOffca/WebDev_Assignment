@@ -39,21 +39,20 @@ body {
     position: fixed;
 }
 
-.navbar_list{
-    background-color: rgba(255, 255, 0, 0);
-}
 
 .navbar_list_item { 
     display: inline-block;
     text-align: center;
     padding: 30px 40px;
+}
+
+#home, #about, #contact {
     font-size: 20px;
+    font-weight: 900;
 }
 
 a:visited {
-    color: #00203f;
-    font-weight: 900;
-    
+    color: #00203f;  
 }
 
 /* Document main section */
@@ -127,10 +126,20 @@ input[type=text], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    resize: none;
     background-color: rgba(255, 255, 255, 0.849);
     margin-bottom: 25px;
     margin-top: 10px;
+ }
+
+ #subject {
+     height: 150px;
+ }
+
+ #name, #phone, #service {
+     height: 35px;
  }
 
  ::placeholder {
@@ -151,28 +160,37 @@ option {
 
 button {
     width: 50%;
+    height: 45px;
+    max-height: 45px;
     padding: 1vh;
     border-radius: 5px;
     border: none;
     float: right;
-    margin-bottom: 8%;
-
+    margin-bottom: 6%;
 }
 
+button:hover {
+    font-weight: 800;
+    background-color: #adc534;    
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.39);
+}
 
+/* ++++++ SMALL VIEWPORT SETUP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @media screen and (max-width: 691px) {
 
     nav {
         margin-top: 0;
-        background-color: #adc534;
+        background-image: linear-gradient(to right, #adc534, #5EB5EB); 
      }   
 
-
      #contact_us_header {
-        margin-top: 8%;
-        margin-bottom: 8%;
-        font-size: 1.6rem;
+        margin-top: 14%;
+        margin-bottom: 10%;
+        font-size: 2rem;
+        padding: 0 10%;
     }
+
 
   /* Align buttons evenly */
     .navbar_list {
@@ -186,22 +204,25 @@ button {
         margin: auto;
         padding: 0 auto;
         font-size: 1rem;
-        border-right: 2px groove rgba(91, 179, 234, 0.363);
-        border-bottom: 2px groove rgba(91, 179, 234, 0.363);
+    }
+
+    .list_item_1, .list_item_2 {
+        border-right: 5px ridge #adc53423;
+   
     }
 
     .contact_us_container {
         height: 100vh;
         max-height: auto;
-        background-size: 90%, contain;
+        background-size: 110%, contain;
         overflow: auto;
         }
 
     .contact_main_section {
         width: 74%;
         max-width: 74%;
-        height: 100vh;
-        max-height: 130vh;
+        height: 120vh;
+        max-height: 120vh;
         margin: 25% 13% 20% 13%;
         overflow-y: hidden;
 
@@ -222,22 +243,28 @@ button {
     padding-right: 10%;
 }
 
-h2, label {
-    font-size: 1.2rem;
+h2 {
+    font-size: 1.3rem;
     }
+
+label {
+    font-size: 1rem;
+}
 
     ::placeholder {
        font-size: .7rem;
     }
 
- 
+    .call_header, .form_header {
+        margin-top: 15%;
+    }
     p {
         width: 100%;
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     address, li {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding-left: 10%;
         margin-top: 5%;
     }
