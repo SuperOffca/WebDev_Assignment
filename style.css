@@ -83,7 +83,7 @@ li {
     font-weight: 900;
 }
 
-a:visited {
+a:visited, a:link {
     color: #00203f;
     font-weight: 900;
     
