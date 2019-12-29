@@ -2,7 +2,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() 
 {  
-    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) %% window.innerWidth > 691)
+    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && window.innerWidth > 691)
         {
         document.getElementById('main_nav').classList.add('nav_background');
         }
