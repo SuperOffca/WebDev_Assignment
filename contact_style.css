@@ -215,8 +215,7 @@ button:hover {
         height: 100vh;
         max-height: auto;
         background-size: 110%, contain;
-        overflow: auto;
-        }
+               }
 
     .contact_main_section {
         width: 74%;
@@ -224,7 +223,7 @@ button:hover {
         height: 120vh;
         max-height: 120vh;
         margin: 25% 13% 20% 13%;
-        overflow-y: hidden;
+        overflow-y: auto;
 
 }
 .contact_options_container {
