@@ -221,7 +221,7 @@ button:hover {
     .contact_main_section {
         width: 74%;
         max-width: 74%;
-        height: auto;
+        height: 80vh;
 /*         max-height: auto; */
         margin: 25% 13% 20% 13%;
         overflow-y: auto;
