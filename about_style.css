@@ -1,0 +1,145 @@
+
+/* General Classes */
+
+    html{
+        font-size: 100%;
+    }
+    body {
+        font-family: 'Mukta Malar', sans-serif;
+        background-color: #00203f;
+        color: rgb(212, 210, 214);
+    }
+
+    .align_both_content {
+        margin: auto;
+        text-align: center;
+    }
+
+    .align_container {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .full_width {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .float_clear {
+        clear: both;
+        overflow: hidden;
+    }
+
+/*++++++++++++++ Navigation bar +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    .navbar_default {
+        width: 100vw;
+        position: fixed;
+    }
+
+    .navbar_list_item { 
+        display: inline-block;
+        text-align: center;
+        padding: 30px 40px;
+    }
+
+    #home, #about, #contact {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    a:visited, a:link {
+        color: #00203f;
+        font-weight: 900;
+    }
+
+/*++++++++ Document main section +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    .about_container {
+        height: 100vh;
+        max-height: 100vh;
+        background-image: url("upper_image.png"), url("background_1a.png");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 60%, contain;
+        background-position: left top, right bottom;
+        overflow: hidden;
+    }
+
+    .about_main_section {
+        width: 74%;
+        max-width: 74%;
+        height: 70%;
+        max-height: 70%;
+        margin: 10% 13%;
+        overflow-y: auto;
+        box-sizing: border-box;
+        background-color: rgba(0, 31, 63, 0.459);
+        -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+        -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+        box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+        }
+
+    #about_header {
+        margin-top: 4%;
+        margin-bottom: 2%;
+        font-family: 'Aclonica', sans-serif;
+        font-size: 3rem;
+    }
+
+
+
+/* ++++++ SMALL VIEWPORT SETUP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 691px) {
+
+    /*++++++++++++++ SMALL Navigation bar +++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    nav {
+        margin-top: 0;
+        background-image: linear-gradient(to right, #adc534, #5EB5EB); 
+     }   
+
+
+  /* Align buttons evenly */
+    .navbar_list {
+        display: flex;
+        justify-items: stretch;
+        justify-content: space-between;
+    }
+
+    .navbar_list_item {
+        width: 33.3%;
+        margin: auto;
+        padding: 0 auto;
+        font-size: 1rem;
+    }
+
+    .list_item_1, .list_item_2 {
+        border-right: 5px ridge #adc53423;
+    }
+
+    /*++++++++ SMALL Document main section +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+    .about_container {
+        height: 100vh;
+        max-height: auto;
+        background-size: 110%, contain;
+        overflow: hidden;
+        }
+
+    .about_main_section {
+        width: 74%;
+        max-width: 74%;
+        height: 80vh;
+        margin: 25% 13% 20% 13%;
+        overflow-y: auto;
+    }
+
+    #about_header {
+        margin-top: 14%;
+        margin-bottom: 10%;
+        font-size: 2rem;
+        padding: 0 10%;
+    }
+
+}
