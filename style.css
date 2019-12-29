@@ -26,7 +26,7 @@ font-family: 'Mukta Malar', sans-serif;
 
     .align_both_content {
         margin: auto;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .align_container {
@@ -44,6 +44,10 @@ font-family: 'Mukta Malar', sans-serif;
     .float_clear {
         clear: both;
         overflow: hidden;
+    }
+
+    .nav_background {
+        background-image: linear-gradient(to right, #AEC534  , #AEC534 ,#001f3f00, transparent);
     }
 
 
@@ -69,6 +73,7 @@ font-family: 'Mukta Malar', sans-serif;
         width: 100vw;
         position: fixed;
         z-index: 4;
+          
     }
 
     li { 
@@ -81,12 +86,12 @@ font-family: 'Mukta Malar', sans-serif;
     #home, #about, #contact {
         font-size: 20px;
         font-weight: 900;
+        text-align: center;
     }
 
-    a:visited, a:link {
-        color: #00203f;
+    .nav_link:visited, .nav_link:link {
+        color: #000f1f;
         font-weight: 900;
-        
     }
 
     /* Header */
@@ -101,6 +106,7 @@ font-family: 'Mukta Malar', sans-serif;
         font-family: 'Aclonica', sans-serif;
         font-size: 8vw;
         margin: 0 0 2% 0;
+        text-align: center;
     }
     .subtitle {
         font-size: 3vw;
@@ -134,9 +140,6 @@ font-family: 'Mukta Malar', sans-serif;
 
     .teaser_section {
         width: 60%;
-        position: relative;
-        z-index: 2;
-        left: 20%;
     }
 
     .teaser_section_1_style {
@@ -153,13 +156,14 @@ font-family: 'Mukta Malar', sans-serif;
 
     .box_size {
         width: 10vw;
-        height: 10vh;
+        height: 10.5vh;
     }
 
     .box {
         clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
         float: left;
         background-image: linear-gradient(to right, #AEC534, rgba(91, 179, 234, 0.363));
+        margin-right: 15px;
     }
 
     .box2 {
@@ -172,6 +176,7 @@ font-family: 'Mukta Malar', sans-serif;
         clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
         float: left;
         background-image: linear-gradient(to right, #5EB5EB, rgba(0, 112, 182, 0.37));
+        margin-right: 15px;
     }
 
     .heading_1{
@@ -186,7 +191,31 @@ font-family: 'Mukta Malar', sans-serif;
         color: #5EB5EB;
     }
 
+    button {
+        width: 30%;
+        height: 45px;
+        max-height: 45px;
+        padding: 1vh;
+        background-color: transparent;
+        color: #adc534;
+        border-radius: 5px;
+        border: solid 2px #adc534;
+        float: right;
+        margin-bottom: 6%;
+    }
 
+    button:hover {
+        font-weight: 800;
+        background-color: #adc534;   
+        color: #00203f;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.39);
+    }
+
+    .go_up {
+        color: white;
+        margin-left: 10%;
+    }
 
 
 /*+++++++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -219,6 +248,10 @@ font-family: 'Mukta Malar', sans-serif;
 
 @media screen and (max-width: 1100px) {
 
+    #main_page_container {
+        background-size: 80%, contain;
+
+    }
 
 }
 
@@ -256,9 +289,13 @@ font-family: 'Mukta Malar', sans-serif;
     }
 
     li {
-        width: 33.3%;
+        width: 33.3%; 
         margin: auto;
         padding: 0 auto;
+   }
+
+   .currentTime {
+       display: block;
    }
    
    #home, #about, #contact {
@@ -273,9 +310,40 @@ font-family: 'Mukta Malar', sans-serif;
 
 /*++++++++++ Sections+++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
+    h2{
+        font-size: 1.2rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+    .teaser_section {
+        width: 80%;
+    }
+
+    .teaser_section_1_style {
+        padding-top: 30%;
+    }
+
+    .teaser_section_2_style{
+        padding-top: 20%;
+    }
+
+    .teaser_section_3_style {
+        padding: 20% 0 30% 0;
+    }
+
+
     .box_size {
         width: 10vw;
-        height: 5vh;
+        height: 6vh;
+    }
+
+    .teaser_content {
+        font-size: 1rem;
+        letter-spacing: .3rem;
+        line-height: 1.2em;
+        padding: 1rem 1rem;
     }
 
 

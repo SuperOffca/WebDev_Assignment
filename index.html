@@ -17,21 +17,19 @@
         <!-- Stlesheets -->
         <link rel="stylesheet" href="css_reset.css">
         <link rel="stylesheet" href="style.css">
-
-        <!-- JAVA SCRIPT SECTION -->
-        <script src="script.js" defer></script>
+         
     </head>
-    <body>
-
+    <body>        
 
            <!-- MAIN NAVIGATION BAR -->
     <div id="main_page_container" class="full_width">
-            <nav class="navbar_default">
+            <nav id="main_nav" class="navbar_default">
                 <ul>
-                    <li class="list_item_1"><a href="index.html" id="home">Home</a></li>   
-                    <li class="list_item_2"><a href="about.html" id="about">About</a></li>
-                    <li class="list_item_3"><a href="contact.html" id="contact">Contact</a></li>
+                    <li class="list_item_1"><a class="nav_link" href="index.html" id="home">Home</a></li>   
+                    <li class="list_item_2"><a class="nav_link" href="about.html" id="about">About</a></li>
+                    <li class="list_item_3"><a class="nav_link" href="contact.html" id="contact">Contact</a></li>
                 </ul>
+                
             </nav>
         <!-- COMPANY  -->
             <div class="full_width align_container">
@@ -43,35 +41,37 @@
                     </header>
             </div>
     </div>
+    
 
-    <div class="info_content full_width float_clear">
-        <section class="teaser_section teaser_section_1_style">
+    <div class="info_content full_width float_clear align_container">
+        <section class="teaser_section teaser_section_1_style align_both_content">
             <div class="box box_size"></div>
             <header class="teaser_header">
                 <h2 class="box_heading"><span class="heading_1">We-Build</span></br> Websites from Start to Finish</h2>
             </header>
                 <p class="teaser_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nobis cum dignissimos, doloremque rem a voluptatum accusamus cupiditate repudiandae beatae laudantium saepe laboriosam eum, inventore similique. Magnam molestiae repellendus minus?</p>
-                <button type="submit" form="contact_online_form" value="Submit">Submit</button>
+                <button type="Find Out More" value="Find Out More"><a href="core_tech.html" id="core_tech">Find Out More</button></a></button>
         </section>
     
-        <section class="teaser_section teaser_section_2_style">
+        <section class="teaser_section teaser_section_2_style align_both_content">
             <div class="box2 box_size"></div>
             <header class="teaser_header">
                 <h2><span class="heading_2">We-Follow</span></br> Standards and Design Principles</h2>
             </header>
                 <p class="teaser_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nobis cum dignissimos, doloremque rem a voluptatum accusamus cupiditate repudiandae beatae laudantium saepe laboriosam eum, inventore similique. Magnam molestiae repellendus minus?</p>
-                <button type="submit" form="contact_online_form" value="Submit">Submit</button>
+                <button type="Find Out More" value="Find Out More"><a href="standards.html" id="standards">Find Out More</button></a></button>
         </section>
     
-        <section class="teaser_section teaser_section_3_style">
+        <section class="teaser_section teaser_section_3_style align_both_content">
             <div class="box3 box_size"></div>
             <header class="teaser_header">
                 <h2><span class="heading_3">We-Employ</span></br> Web Technologies to Boost Business</h2>
             </header>
                 <p class="teaser_content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nobis cum dignissimos, doloremque rem a voluptatum accusamus cupiditate repudiandae beatae laudantium saepe laboriosam eum, inventore similique. Magnam molestiae repellendus minus?</p>
-                <button type="submit" form="contact_online_form" value="Submit">Submit</button>
+                <button type="Find Out More" value="Find Out More"><a href="application_of_tech.html" id="application">Find Out More</button></a></button>
         </section>
         
+        <a class="go_up" href="#main_page_container">Back to Top</a>
     </div>
 
     <div class="footer_container full_width">
@@ -87,11 +87,10 @@
                       <summary>Copyright 2019</summary>
                       <p>- by B.A. All Rights Reserved.</p>
               </details>
-      
+            <p class="footer_link"><a href="" id="site_map">Site Map</a></p> 
+            <p class="footer_link"><a href="" id="documentation">Documentation</a></p>
         </footer>
     </div>
-
-
-
+    <script src="script.js"></script>
     </body>
 </html>
