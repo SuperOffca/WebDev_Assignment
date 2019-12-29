@@ -372,15 +372,15 @@ span {
 
 /*+++++++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 footer {
-    width: 60%;
+    width: 70%;
     padding-top: 10vh;
 }
 
 .footer_link {
-    font-size: 2vh;
+    font-size: 2vw;
 }
     details {
-        font-size: 2vh;
+        font-size: 2vw;
     }
 
 
