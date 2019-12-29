@@ -216,7 +216,7 @@ button:hover {
         max-height: 100vh;
         max-width: 100vw;
         background-size: 110%, contain;
-        overflow: auto;
+        overflow: hidden;
                }
 
     .contact_main_section {
