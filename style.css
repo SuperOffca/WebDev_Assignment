@@ -76,7 +76,7 @@ font-family: 'Mukta Malar', sans-serif;
           
     }
 
-    li { 
+    .top_li { 
         display: inline-block;
         text-align: center;
         padding: 30px 40px;
@@ -151,7 +151,7 @@ font-family: 'Mukta Malar', sans-serif;
     }
 
     .teaser_section_3_style {
-        padding: 10% 0;
+        padding-top: 10%;
     }
 
     .box_size {
@@ -213,10 +213,19 @@ font-family: 'Mukta Malar', sans-serif;
     }
 
     .go_up {
-        color: white;
-        margin-left: 10%;
+        margin: 20px 0;
+        border-radius: 5px;
+        border: solid 2px #adc534;
+        padding: 1vh;
     }
 
+    .go_up:hover {
+        font-weight: 800;
+        background-color: #adc534;   
+        color: #00203f;
+        transform: translateY(-0.1rem);
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.39);
+    }
 
 /*+++++++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
     .footer_container {
@@ -228,20 +237,22 @@ font-family: 'Mukta Malar', sans-serif;
         /* max-width: 100vw; */
     }
 
+    footer {
+        width: 50%;
+        padding-top: 15vh;
+    }
+
+    .footer_link {
+        display: inline-block;
+        margin-right: 10%;
+    }
+
     details {
-        padding-top: 1%;
+        padding-top: 4%;
         font-size: 0.9rem;
         position: relative;
-        left: 35%;
+        left: 5%;
     }
-
-    address {
-        padding-top: 5%;
-        font-size: 1.5rem;
-        position: relative;
-        left: 35%;
-    }
-
 
 /* ++++++ MEDIUM VIEWPORT SETUP ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -288,7 +299,7 @@ font-family: 'Mukta Malar', sans-serif;
         justify-content: space-between;
     }
 
-    li {
+    .top_li {
         width: 33.3%; 
         margin: auto;
         padding: 0 auto;
@@ -317,6 +328,7 @@ font-family: 'Mukta Malar', sans-serif;
     span {
         font-size: 1.5rem;
     }
+    
     .teaser_section {
         width: 80%;
     }
@@ -330,7 +342,7 @@ font-family: 'Mukta Malar', sans-serif;
     }
 
     .teaser_section_3_style {
-        padding: 20% 0 30% 0;
+        padding: 20% 0 20% 0;
     }
 
 
@@ -346,20 +358,22 @@ font-family: 'Mukta Malar', sans-serif;
         padding: 1rem 1rem;
     }
 
+    button {
+        width: 40%;
+    }
 
 /*+++++++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-    footer {
-         height: 20vh;
-         background-size: 100% 100%;
+footer {
+    width: 60%;
+    padding-top: 10vh;
+}
+
+.footer_link {
+    font-size: 2vh;
+}
+    details {
+        font-size: 2vh;
     }
 
-    details {
-        font-size: 3vh;
-    }
-    
-    address {
-        font-size: 1rem;
-        margin: 0;
-    }
 
 }
