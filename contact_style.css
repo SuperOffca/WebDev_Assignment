@@ -139,7 +139,7 @@ input[type=text], select, textarea {
  }
 
  #name, #phone, #service {
-     height: 35px;
+     height: 30px;
  }
 
  ::placeholder {
