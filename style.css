@@ -191,7 +191,7 @@ font-family: 'Mukta Malar', sans-serif;
         color: #5EB5EB;
     }
 
-    button {
+    .button {
         width: 30%;
         height: 45px;
         max-height: 45px;
@@ -204,7 +204,7 @@ font-family: 'Mukta Malar', sans-serif;
         margin-bottom: 6%;
     }
 
-    button:hover {
+    .button:hover {
         font-weight: 800;
         background-color: #adc534;   
         color: #00203f;
