@@ -155,8 +155,12 @@ nav {
     padding: 0 10%;
 }
 
+.documents_list {
+ margin-top: 50px;
+ }
+    
     .article_link {
-     font-size: 1.5rem;
 
+     font-size: 1.5rem;
  }
 }
