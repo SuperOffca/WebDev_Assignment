@@ -354,7 +354,7 @@ span {
 
 .teaser_content {
     font-size: 3vw;
-    letter-spacing: .3rem;
+    letter-spacing: .1rem;
     line-height: 1.2em;
     padding: 1rem 1rem;
 }
@@ -367,7 +367,7 @@ span {
 
 /*+++++++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 footer {
-width: 60%;
+width: 65%;
 padding-top: 10vh;
 }
 
