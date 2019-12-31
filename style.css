@@ -359,8 +359,10 @@ span {
     padding: 1rem 1rem;
 }
 
-button {
+.button {
     width: 40%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 /*+++++++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
