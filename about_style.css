@@ -50,9 +50,13 @@ body {
     font-weight: 900;
 }
 
-a:visited, a:link {
+.nav_li:visited, .nav_li:link {
     color: #00203f;
     font-weight: 900;
+}
+
+#inline_link {
+    text-decoration: underline;
 }
 
 /*++++++++ Document main section +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
